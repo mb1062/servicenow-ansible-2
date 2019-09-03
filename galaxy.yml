@@ -1,0 +1,24 @@
+namespace: "n3pjk"
+name: "servicenow"
+version: "0.0.1"
+readme: "README.md"
+authors:
+    - "Paul Knight <paul.knight@delaware.gov>"
+    - "Tim Rightnour <thegarbledone@gmail.com>"
+description: >
+    The Service Now modules previously packaged as part of Ansible, now
+    in a Collection distributed via Ansible Galaxy.  snow_record creates,
+    updates or deletes a record in a specified table in the Servic Now
+    instance. snow_record_find retrieves one or more records based on the
+    supplied query.
+license:
+    - "GPL-3.0-or-later"
+tags:
+    - preview
+    - servicenow
+    - snow
+    - collection
+repository: "https://www.github.com/n3pjk/servicenow-ansible"
+documentation: "https://www.github.com/n3pjk/servicenow-ansible/wiki"
+homepage: "https://www.github.com/n3pjk/servicenow-ansible"
+issues: "https://www.github.com/n3pjk/servicenow-ansible/issues"
