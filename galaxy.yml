@@ -1,6 +1,6 @@
 namespace: "n3pjk"
 name: "servicenow"
-version: "0.0.1"
+version: "0.0.2"
 readme: "README.md"
 authors:
     - "Paul Knight <paul.knight@delaware.gov>"
