@@ -18,37 +18,38 @@ DOCUMENTATION = '''
 module: snow_record_find
 short_description: Search for multiple records from ServiceNow
 version_added: "2.9"
-description:
-    - Gets multiple records from a specified table from ServiceNow based on a query dictionary.
+description: >-
+    Gets multiple records from a specified table from ServiceNow based
+    on a query dictionary.
 options:
     table:
-      description:
-      - Table to query for records.
+      description: >-
+        Table to query for records.
       type: str
       required: false
       default: incident
     query:
-      description:
-      - Dict to query for records.
+      description: >-
+        Dict to query for records.
       type: dict
       required: true
     max_records:
-      description:
-      - Maximum number of records to return.
+      description: >-
+        Maximum number of records to return.
       type: int
       required: false
       default: 20
     order_by:
-      description:
-      - Field to sort the results on.
-      - Can prefix with "-" or "+" to change decending or ascending sort order.
+      description: >-
+        Field to sort the results on.  Can prefix with "-" or "+" to
+        change decending or ascending sort order.
       type: str
       default: "-created_on"
       required: false
     return_fields:
-      description:
-      - Fields of the record to return in the json.
-      - By default, all fields will be returned.
+      description: >-
+        Fields of the record to return in the json.  By default, all
+        fields will be returned.
       type: list
       required: false
 requirements:
@@ -121,7 +122,7 @@ record:
 '''
 
 from ansible.module_utils.basic import AnsibleModule
-from ansible.module_utils.service_now import ServiceNowClient
+from ansible_collections.n3pjk.servicenow.plugins.module_utils.service_now import ServiceNowClient
 from ansible.module_utils._text import to_native
 
 try:
