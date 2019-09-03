@@ -11,6 +11,9 @@ description: >
     updates or deletes a record in a specified table in the Servic Now
     instance. snow_record_find retrieves one or more records based on the
     supplied query.
+modules:
+    - snow_record
+    - snow_record_find
 license:
     - "GPL-3.0-or-later"
 tags:
